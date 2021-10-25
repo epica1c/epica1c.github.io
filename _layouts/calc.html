@@ -13,6 +13,11 @@ layout: page
 
           if(f.option1.value && f.option2.value && f.option3.value && f.option4.value) {
               f.total.value = parseInt(OptionChk(f.option11.value,f.option1.value)) + parseInt(OptionChk(f.option22.value,f.option2.value)) + parseInt(OptionChk(f.option33.value,f.option3.value)) + parseInt(OptionChk(f.option44.value,f.option4.value));
+
+              f.p1.value = Math.round(OptionChk(f.option11.value,f.option1.value)*10)/10 + '%';
+              f.p2.value = Math.round(OptionChk(f.option22.value,f.option2.value)*10)/10 + '%';
+              f.p3.value = Math.round(OptionChk(f.option33.value,f.option3.value)*10)/10 + '%';
+              f.p4.value = Math.round(OptionChk(f.option44.value,f.option4.value)*10)/10 + '%';
           } else {
               return false;
 
@@ -79,6 +84,7 @@ layout: page
           <th class="tg-0pky">
             <input type="number" class="form-control" style="width:120px; text-align: center;vertical-align: middle;" id="base_def" placeholder="방어력" min=0 value="" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
           </th>
+          <th class="tg-0pky"></th>
         </tr>
       </thead>
       <tbody>
@@ -103,6 +109,9 @@ layout: page
           <td class="tg-phtq" colspan="2">
             <input type="number" class="form-control text-center" id="option1" min=0 value="0" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
           </td>
+          <td class="tg-phtq">
+            <input type="text" class="form-control text-center" id="p1" value="" readonly style="width:70px; text-align: center;vertical-align: middle;">
+          </td>
         </tr>
         <tr>
           <td class="tg-0pky">
@@ -124,6 +133,9 @@ layout: page
           </td>
           <td class="tg-0pky" colspan="2">
             <input type="number" class="form-control text-center" id="option2" min=0 value="0" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
+          </td>
+          <td class="tg-phtq">
+            <input type="text" class="form-control text-center" id="p2" value="" readonly style="width:70px; text-align: center;vertical-align: middle;">
           </td>
         </tr>
         <tr>
@@ -147,6 +159,9 @@ layout: page
           <td class="tg-phtq" colspan="2">
             <input type="number" class="form-control text-center" id="option3" min=0 value="0" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
           </td>
+          <td class="tg-phtq">
+            <input type="text" class="form-control text-center" id="p3" value="" readonly style="width:70px; text-align: center;vertical-align: middle;">
+          </td>
         </tr>
         <tr>
           <td class="tg-0pky">
@@ -169,6 +184,9 @@ layout: page
           <td class="tg-0pky" colspan="2">
             <input type="number" class="form-control text-center" id="option4" min=0 value="0" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
           </td>
+          <td class="tg-phtq">
+            <input type="text" class="form-control text-center" id="p4" value="" readonly style="width:70px; text-align: center;vertical-align: middle;">
+          </td>
         </tr>
         <tr>
           <td class="tg-phtq text-center" style="width:100px; vertical-align: middle;">
@@ -176,6 +194,8 @@ layout: page
           </td>
           <td class="tg-phtq" colspan="2">
             <input type="number" class="form-control text-center" id="total" value="" readonly>
+          </td>
+          <td class="tg-phtq">
           </td>
         </tr>
       </tbody>
