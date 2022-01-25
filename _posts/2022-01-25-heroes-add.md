@@ -1,5 +1,5 @@
 ---
-title: 홈페이지 스타트
+title: 영웅 선택 가능
 author: 수채화
 date: 2022-01-25
 categories: [Blogging]
