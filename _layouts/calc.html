@@ -73,6 +73,7 @@ layout: page
       }
     </script>
   </head>
+  <body>
     <style type="text/css">
       .tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;}
       .tg td{background-color:#F4F6F6;border-color:#9ABAD9;border-style:solid;border-width:0px;color:#444;
@@ -87,8 +88,8 @@ layout: page
       <table class="tg">
       <thead>
         <tr>
-          <th colspan="3">
-            <select id="hero" title="영웅을 선택하세요" class="form-control custom-select selectpicker" data-size="12" data-show-subtext="true" onchange="InsertData();">
+          <th colspan="4">
+            <select id="hero" title="영웅을 선택하세요" name="hero" class="form-control custom-select selectpicker" data-size="12" data-show-subtext="true" onchange="InsertData();" onmouseup="InsertData();" onKeyPress="InsertData();" onKeyUp="InsertData();">
               <option value1=1005 value2=4693 value3=532>갓마더</option>
               <option value1=957 value2=5057 value3=592>고양이 클라릿사</option>
               <option value1=1252 value2=4612 value3=627>구도자 아이테르</option>
@@ -111,18 +112,18 @@ layout: page
               <option value1=966 value2=7323 value3=657>라비</option>
               <option value1=839 value2=6405 value3=752>라스트 라이더 크라우</option>
               <option value1=603 value2=4945 value3=662>랏츠</option>
-              <option value1=1158 value2=6002 value2=553>랑디</option>
-              <option value1=951 value2=5517 value2=583>레나</option>
-              <option value1=930 value2=5380 value2=564>레오</option>
-              <option value1=694 value2=4450 value2=655>레이</option>
-              <option value1=827 value2=4046 value2=613>레퀴엠로어</option>
-              <option value1=1208 value2=6488 value2=616>렘</option>
-              <option value1=1109 value2=4329 value2=655>로만</option>
-              <option value1=621 value2=5474 value2=798>로앤나</option>
-              <option value1=821 value2=6266 value2=703>로제</option>
-              <option value1=1119 value2=6266 value2=627>루나</option>
-              <option value1=1316 value2=4777 value2=715>루루카</option>
-              <option value1=558 value2=4725 value2=624>루시</option>
+              <option value1=1158 value2=6002 value3=553>랑디</option>
+              <option value1=951 value2=5517 value3=583>레나</option>
+              <option value1=930 value2=5380 value3=564>레오</option>
+              <option value1=694 value2=4450 value3=655>레이</option>
+              <option value1=827 value2=4046 value3=613>레퀴엠로어</option>
+              <option value1=1208 value2=6488 value3=616>렘</option>
+              <option value1=1109 value2=4329 value3=655>로만</option>
+              <option value1=621 value2=5474 value3=798>로앤나</option>
+              <option value1=821 value2=6266 value3=703>로제</option>
+              <option value1=1119 value2=6266 value3=627>루나</option>
+              <option value1=1316 value2=4777 value3=715>루루카</option>
+              <option value1=558 value2=4725 value3=624>루시</option>
               <option value1=1412 value2=4248 value3=645>루트비히</option>
               <option value1=1283 value2=4976 value3=536>리디카</option>
               <option value1=1119 value2=6266 value3=627>릴리벳</option>
@@ -289,125 +290,101 @@ layout: page
             </th>
         </tr>
       </thead>
+        <tr>
+          <th class="tg-0pky">
+            <input type="number" title="영웅의 기초 공격력" class="form-control" style="width:120px; text-align: center;vertical-align: middle;" id="base_att" placeholder="공격력" min=0 value="" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
+          </th>
+          <th class="tg-0pky">
+            <input type="number" title="영웅의 기초 생명력" class="form-control" style="width:120px; text-align: center;vertical-align: middle;" id="base_life" placeholder="생명력" min=0 value="" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
+          </th>
+          <th class="tg-0pky">
+            <input type="number" title="영웅의 기초 방어력" class="form-control" style="width:120px; text-align: center;vertical-align: middle;" id="base_def" placeholder="방어력" min=0 value="" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
+          </th>
+          <th class="tg-0pky">           
+          </th>
+        </tr>
       <tbody>
         <tr>
-          <th class="tg-0pky">
-            <input type="number" class="form-control" style="width:120px; text-align: center;vertical-align: middle;" id="base_att" placeholder="공격력" min=0 value="" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
-          </th>
-          <th class="tg-0pky">
-            <input type="number" class="form-control" style="width:120px; text-align: center;vertical-align: middle;" id="base_life" placeholder="생명력" min=0 value="" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
-          </th>
-          <th class="tg-0pky">
-            <input type="number" class="form-control" style="width:120px; text-align: center;vertical-align: middle;" id="base_def" placeholder="방어력" min=0 value="" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
-          </th>
-          <th class="tg-0pky"></th>
-        </tr>
-      
-        <tr>
           <td class="tg-phtq">
-            <select id="option11" name="option11" class="form-control custom-select selectpicker" data-size="12" data-show-subtext="true" onchange="Chking();">
+            <select id="option11" title="퍼센트 공격력, 생명력, 방어력, 적중, 저항, 치명피해 옵션은 변경하지 마세요" name="option11" class="form-control custom-select selectpicker" data-size="12" data-show-subtext="true" onchange="Chking();">
               <option value="">부옵션1</option>
               <option data-divider="true"></option>
-              <option value="attackp">공격력 %</option>
               <option value="att">공격력</option>
-              <option value="lifep">생명력 %</option>
               <option value="life">생명력</option>
-              <option value="defensep">방어력 %</option>
               <option value="def">방어력</option>
               <option value="speed">속도</option>
               <option value="crit_rate">치명확률</option>
-              <option value="crit_damage">치명피해</option>
-              <option value="eff">효과적중</option>
-              <option value="eff_resist">효과저항</option>
             </select>
           </td>
           <td class="tg-phtq" colspan="2">
             <input type="number" class="form-control text-center" id="option1" min=0 value="0" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
           </td>
           <td class="tg-phtq">
-            <input type="text" class="form-control text-center" id="p1" value="" readonly style="width:70px; text-align: center;vertical-align: middle;">
+            <input type="text" class="form-control text-center" id="p1" value="" readonly style="width:80px; text-align: center;vertical-align: middle;">
           </td>
         </tr>
         <tr>
           <td class="tg-0pky">
-            <select id="option22" name="option22" class="form-control custom-select selectpicker" data-size="12" data-show-subtext="true" onchange="Chking();">
+            <select id="option22" title="퍼센트 공격력, 생명력, 방어력, 적중, 저항, 치명피해 옵션은 변경하지 마세요" name="option22" class="form-control custom-select selectpicker" data-size="12" data-show-subtext="true" onchange="Chking();">
               <option value="">부옵션2</option>
               <option data-divider="true"></option>
-              <option value="attackp">공격력 %</option>
               <option value="att">공격력</option>
-              <option value="lifep">생명력 %</option>
               <option value="life">생명력</option>
-              <option value="defensep">방어력 %</option>
               <option value="def">방어력</option>
               <option value="speed">속도</option>
               <option value="crit_rate">치명확률</option>
-              <option value="crit_damage">치명피해</option>
-              <option value="eff">효과적중</option>
-              <option value="eff_resist">효과저항</option>
             </select>
           </td>
           <td class="tg-0pky" colspan="2">
             <input type="number" class="form-control text-center" id="option2" min=0 value="0" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
           </td>
           <td class="tg-phtq">
-            <input type="text" class="form-control text-center" id="p2" value="" readonly style="width:70px; text-align: center;vertical-align: middle;">
+            <input type="text" class="form-control text-center" id="p2" value="" readonly style="width:80px; text-align: center;vertical-align: middle;">
           </td>
         </tr>
         <tr>
           <td class="tg-phtq">
-            <select id="option33" name="option33" class="form-control custom-select selectpicker" data-size="12" data-show-subtext="true" onchange="Chking();">
+            <select id="option33" title="퍼센트 공격력, 생명력, 방어력, 적중, 저항, 치명피해 옵션은 변경하지 마세요" name="option33" class="form-control custom-select selectpicker" data-size="12" data-show-subtext="true" onchange="Chking();">
               <option value="">부옵션3</option>
               <option data-divider="true"></option>
-              <option value="attackp">공격력 %</option>
               <option value="att">공격력</option>
-              <option value="lifep">생명력 %</option>
               <option value="life">생명력</option>
-              <option value="defensep">방어력 %</option>
               <option value="def">방어력</option>
               <option value="speed">속도</option>
               <option value="crit_rate">치명확률</option>
-              <option value="crit_damage">치명피해</option>
-              <option value="eff">효과적중</option>
-              <option value="eff_resist">효과저항</option>
             </select>
           </td>
           <td class="tg-phtq" colspan="2">
             <input type="number" class="form-control text-center" id="option3" min=0 value="0" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
           </td>
           <td class="tg-phtq">
-            <input type="text" class="form-control text-center" id="p3" value="" readonly style="width:70px; text-align: center;vertical-align: middle;">
+            <input type="text" class="form-control text-center" id="p3" value="" readonly style="width:80px; text-align: center;vertical-align: middle;">
           </td>
         </tr>
         <tr>
           <td class="tg-0pky">
-            <select id="option44" name="option44" class="form-control custom-select selectpicker" data-size="12" data-show-subtext="true" onchange="Chking();">
+            <select id="option44" title="퍼센트 공격력, 생명력, 방어력, 적중, 저항, 치명피해 옵션은 변경하지 마세요" name="option44" class="form-control custom-select selectpicker" data-size="12" data-show-subtext="true" onchange="Chking();">
               <option value="">부옵션4</option>
               <option data-divider="true"></option>
-              <option value="attackp">공격력 %</option>
               <option value="att">공격력</option>
-              <option value="lifep">생명력 %</option>
               <option value="life">생명력</option>
-              <option value="defensep">방어력 %</option>
               <option value="def">방어력</option>
               <option value="speed">속도</option>
               <option value="crit_rate">치명확률</option>
-              <option value="crit_damage">치명피해</option>
-              <option value="eff">효과적중</option>
-              <option value="eff_resist">효과저항</option>
             </select>
           </td>
           <td class="tg-0pky" colspan="2">
             <input type="number" class="form-control text-center" id="option4" min=0 value="0" onmouseup="Chking();" onKeyPress="Chking();" onKeyUp="Chking();">
           </td>
           <td class="tg-phtq">
-            <input type="text" class="form-control text-center" id="p4" value="" readonly style="width:70px; text-align: center;vertical-align: middle;">
+            <input type="text" class="form-control text-center" id="p4" value="" readonly style="width:80px; text-align: center;vertical-align: middle;">
           </td>
         </tr>
         <tr>
           <td class="tg-phtq text-center" style="width:100px; vertical-align: middle;">
             점수
           </td>
-          <td class="tg-phtq" colspan="2">
+          <td class="tg-phtq" colspan="2" title="치확 1.5배, 속도 2배 그외 일괄 1점">
             <input type="number" class="form-control text-center" id="total" value="" readonly>
           </td>
           <td class="tg-phtq">
@@ -417,3 +394,4 @@ layout: page
       </table>
       </form>
       </div>
+    </body>
