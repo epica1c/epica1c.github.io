@@ -24,6 +24,18 @@ layout: page
           }
       }
 
+      function InsertData() {
+        var batk = $("#hero > option:selected").attr("value1");
+        var blife = $("#hero > option:selected").attr("value2"); 
+        var bdef = $("#hero > option:selected").attr("value3");
+
+        var f = eval("document.frm");
+
+        f.base_att.value = batk;
+        f.base_life.value = blife;
+        f.base_def.value = bdef;
+      }
+
       function OptionChk(val, data) {
         if((val == "crit_rate")) {
           data = data * 1.5;
