@@ -1,6 +1,6 @@
 ---
 layout: links
 title: Links
-icon: fa-solid fa-link-horizontal
-order: 3
+icon: fas fa-paperclip
+order: 4
 ---
