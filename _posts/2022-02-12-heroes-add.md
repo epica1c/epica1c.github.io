@@ -3,7 +3,7 @@ title: 추가 영웅
 author: 수채화
 date: 2022-02-12
 categories: [Blogging]
-tags: [Heros add]]
+tags: [Heros add]
 pin: true
 ---
 
