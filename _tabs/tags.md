@@ -1,6 +1,6 @@
 ---
 layout: tags
 title: Tags
-icon: fas fa-link
+icon: fas fa-sitemap
 order: 3
 ---

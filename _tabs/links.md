@@ -1,6 +1,6 @@
 ---
 layout: links
 title: Links
-icon: fas fa-paperclip
+icon: fas fa-link
 order: 4
 ---
