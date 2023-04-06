@@ -1,6 +1,6 @@
 var str;
 var trans;
-    alert('제발돼라');
+//    alert('제발돼라');
 
 $.ajax({
     url : "/assets/js/data/ko.json",

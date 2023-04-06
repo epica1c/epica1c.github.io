@@ -5,7 +5,6 @@ icon: fas fa-calculator
 order: 1
 ---
 
-
 <script src="/assets/js/data/jquery-3.6.4.min.js"></script>
 <script src="/assets/js/data/calc.js" defer></script>
 <body>
