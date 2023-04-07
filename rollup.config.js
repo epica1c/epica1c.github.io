@@ -42,4 +42,4 @@ export default [
   build('page'),
   build('post'),
   build('misc')
-];
+]; 
