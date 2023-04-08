@@ -41,7 +41,7 @@ jobs:
         run: npm i && npm run build
       
       - name: init
-        run: bash tools/init.sh
+        run: bash /tools/init 
 
       - name: Test Site
-        run: bash tools/test.sh
+        run: bash /tools/test
