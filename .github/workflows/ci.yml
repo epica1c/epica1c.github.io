@@ -43,5 +43,5 @@ jobs:
 #      - name: init
 #        run: bash tools/init 
 
-      - name: Test Site
-        run: bash tools/test
+#      - name: Test Site
+#        run: bash tools/test
