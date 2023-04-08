@@ -5,10 +5,10 @@ icon: fas fa-calculator
 order: 1
 ---
 
-
+<script src="/assets/js/data/jquery-3.6.4.min.js"></script>
 <script src="/assets/js/data/calc.js" defer></script>
 <body>
-    <br><br><br><h3> 계산기 <br><br>
+    <br><br><br> 계산기 <br><br>
     <style type="text/css">
         .tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;}
         .tg td{background-color:#F4F6F6;border-color:#9ABAD9;border-style:solid;border-width:0px;color:#444;
