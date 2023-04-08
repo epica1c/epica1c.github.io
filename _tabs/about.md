@@ -4,4 +4,5 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> 이 화면이 나오면 정상 작동 중...
+> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+{: .prompt-tip }
