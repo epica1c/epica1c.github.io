@@ -1,7 +1,6 @@
 ---
-layout: about
 icon: fas fa-info-circle
 order: 5
 ---
 
-> 이게 고쳐 지긴 했나? 모르겠음
+> 아직도 어떻게 고쳤는지 모름
