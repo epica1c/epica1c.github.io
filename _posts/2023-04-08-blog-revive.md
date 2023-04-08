@@ -1,7 +1,7 @@
 ---
 title: 드디어 살림
 author: 수채화
-date: 2023-04-08 20:40:00 +0900
+date: 2023-04-08 20:40:00 0000
 categories: [Blogging, Post]
 tags: [blog, revive]
 ---
