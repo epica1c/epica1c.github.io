@@ -15,7 +15,7 @@ $.ajax({
 });
 
 $.ajax({
-    url : "/assets/js/data/herodata.json",
+    url : "http://e7-optimizer-game-data.s3-accelerate.amazonaws.com/herodata.json",
     type : "get",
     dataType : "json",
 
