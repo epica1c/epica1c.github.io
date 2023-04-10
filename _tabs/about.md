@@ -4,29 +4,29 @@ order: 5
 # The Links
 ---
 
-- [에픽세븐 스토브]("https://page.onstove.com/epicseven/kr/main""https://page.onstove.com/epicseven/kr/main"){:target="_blank"}
+- <a href="https://page.onstove.com/epicseven/kr/main" style="text-decoration:none" target=_blank>에픽세븐 스토브</a>
   
-- [장비 점수]("https://meowyih.github.io/epic7-gear/index.html?lang=en"){:target="_blank"}
+- <a href="https://meowyih.github.io/epic7-gear/index.html?lang=en" style="text-decoration:none" target=_blank>장비 점수</a>
   
-- [캠핑 계산기]("[https://ceciliabot.github.io"](https://ceciliabot.github.io")){:target="_blank"}
+- <a href="https://ceciliabot.github.io" style="text-decoration:none" target=_blank>캠핑 계산기</a>
   
-- [데미지 계산기](https://e7calc.xyz/kr/index.html){:target="_blank"}
+- <a href="https://e7calc.xyz/kr/index.html" style="text-decoration:none" target=_blank>스킬 데미지 계산기</a>
   
-- [실레나 영웅 정보](https://www.epic7stats.com){:target="_blank"}
+- <a href="https://www.epic7stats.com" style="text-decoration:none" target=_blank>실레나 영웅 정보</a>
   
-- [기사단전 방덱 메타]("https://fribbels.github.io/e7/gw-meta"){:target="_blank"}
+- <a href="https://fribbels.github.io/e7/gw-meta" style="text-decoration:none" target=_blank>기사단전 방덱 메타</a>
   
-- [에픽세븐 데이터베이스]("https://epicsevendb.com/ko"){:target="_blank"}
+- <a href="https://epicsevendb.com/ko" style="text-decoration:none" target=_blank>에픽세븐 데이터베이스</a>
   
 
 ---
 
-- [에펨코리아 에픽세븐 게시판]("https://www.fmkorea.com/epic7"){:target="_blank"}
+- <a href="https://www.fmkorea.com/epic7" style="text-decoration:none" target=_blank>에펨코리아 에픽세븐 게시판</a>
   
-- [아카라이브 에픽세븐 채널]("https://arca.live/b/epic7"){:target="_blank"}{:target="_blank"}
+- <a href="https://arca.live/b/epic7" style="text-decoration:none" target=_blank>아카라이브 에픽세븐 채널</a>
   
-- [디시인사이드 에픽세븐 갤러리]("https://gall.dcinside.com/mgallery/board/lists/?id=epicseven"){:target="_blank"}
+- <a href="https://gall.dcinside.com/mgallery/board/lists/?id=epicseven" target=_blank>디시인사이드 에픽세븐 갤러리</a>
   
-- [디시인사이드 타마린느 갤러리]("https://gall.dcinside.com/mgallery/board/lists/?id=apple1004ga"){:target="_blank"}
+- <a href="https://gall.dcinside.com/mgallery/board/lists/?id=apple1004ga" target=_blank>디시인사이드 타마린느 갤러리</a>
   
 
