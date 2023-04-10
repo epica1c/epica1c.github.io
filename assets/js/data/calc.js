@@ -16,7 +16,7 @@ $.ajax({
 });
 
 $.ajax({
-    url : "/assets/js/data/herodata.json",
+    url : "https://github.com/fribbels/Fribbels-Epic-7-Optimizer/blob/main/data/cache/herodata.json",
     type : "get",
     dataType : "json",
 
