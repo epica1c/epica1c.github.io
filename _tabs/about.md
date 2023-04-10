@@ -1,5 +1,7 @@
 ---
-layout: page
+title: about
+icon: fas fa-link
+order: 5
 # The Links layout
 ---
 
