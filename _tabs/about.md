@@ -1,8 +1,7 @@
 ---
-title: about
 icon: fas fa-link
 order: 5
-# The Links layout
+# The Links
 ---
 
 - [에픽세븐 스토브]("https://page.onstove.com/epicseven/kr/main""https://page.onstove.com/epicseven/kr/main")
