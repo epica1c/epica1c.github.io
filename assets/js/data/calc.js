@@ -39,6 +39,9 @@ $.ajax({
     });
 
     str = JSON.stringify(data); // <> parse()
+    str.sort(function(a,b){
+      return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+    });
 },
 error : function() { alert('데이터 불러오기 '); } // data 불러오기 실패시 error 출력
 });
