@@ -15,7 +15,7 @@ $.ajax({
 });
 
 $.ajax({
-    url : "http://e7-optimizer-game-data.s3-accelerate.amazonaws.com/herodata.json",
+    url : "/assets/js/data/herodata.json",
     type : "get",
     dataType : "json",
 
@@ -40,7 +40,7 @@ $.ajax({
 
     str = JSON.stringify(data); // <> parse()
 },
-error : function() { alert('error2'); } // data 불러오기 실패시 error 출력
+error : function() { alert('데이터 불러오기 '); } // data 불러오기 실패시 error 출력
 });
 
 function showHeroData() {
