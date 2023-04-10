@@ -28,5 +28,3 @@ order: 5
 - <a href="https://gall.dcinside.com/mgallery/board/lists/?id=epicseven" target=_blank>디시인사이드 에픽세븐 갤러리</a>
   
 - <a href="https://gall.dcinside.com/mgallery/board/lists/?id=apple1004ga" target=_blank>디시인사이드 타마린느 갤러리</a>
-  
-
