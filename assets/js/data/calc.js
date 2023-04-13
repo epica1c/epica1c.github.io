@@ -61,8 +61,9 @@ function sortSelect(selId)
   });
 
   sel.html(optionList);
-  $('#heroList option:eq(0)').attr('selected','selected');
-  $('#heroList option:selected').text('영웅선택');
+
+  $('#heroList').prepend('<option>영웅 선택</option>');
+  $('#heroList').val('영웅 선택').prop("selected",true);
 }
 
 function showHeroData() {
