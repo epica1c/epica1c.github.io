@@ -39,12 +39,30 @@ $.ajax({
     });
 
     str = JSON.stringify(data); // <> parse()
-    str.sort(function(a,b){
-      return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
-    });
+    
+    sortSelect('heroList');
 },
 error : function() { alert('데이터 불러오기 '); } // data 불러오기 실패시 error 출력
 });
+
+function sortSelect(selId)
+{
+  var sel = $('#'+selId);
+  var optionList = sel.find('option');
+
+  optionList.sort(function(a, b){
+    if (a.text > b.text) return 1;
+    else if (a.text < b.text) return -1;
+    else {
+        if (a.value > b.value) return 1;
+        else if (a.value < b.value) return -1;
+        else return 0;
+    }
+  });
+
+  sel.html(optionList);
+  $('#heroList option:selected').text('영웅선택');
+}
 
 function showHeroData() {
     // JSON 문자열을 JavaScript 객체로 변환하기
