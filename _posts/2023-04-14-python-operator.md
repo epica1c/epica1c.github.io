@@ -1,8 +1,8 @@
 ---
-title: 파이썬의 변수, 연산자
+title: 1. 파이썬의 변수, 연산자
 author: 수채화
 date: 2023-04-14 15:00:00 0000
-categories: [Python, Study]
+categories: [Study, Python]
 tags: [python, operator]
 ---
 
@@ -32,4 +32,4 @@ tags: [python, operator]
 
 
 - 비트 연산
-> &, |, ^, ~, <<, >>
+> &, \|, ^, ~, <<, >>
