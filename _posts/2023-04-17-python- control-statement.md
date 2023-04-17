@@ -17,8 +17,11 @@ tags: [python, control statement]
 > 
 > range(5) -> 0, 5
 > list(range(10)) -> 0,1,2,3,4
+> 
 > range(2,5) -> 2, 5
+> 
 > list(range(2,5)) -> 2,3,4
+> 
 > list(range(0,5,2)) -> 0,2,4
 
 3. while
@@ -26,5 +29,7 @@ tags: [python, control statement]
 
 - break, continue
 > 반복문, 조건문 
+> 
 > 강제 종료 : break
-> 강제 다음 반복 : 
+> 
+> 강제 다음 반복 : continue
