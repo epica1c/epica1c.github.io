@@ -11,8 +11,11 @@ tags: [python, control statement]
 > elif 조건:
 > else:
 
+
 2. for
+> 
 > for 변수 in 반복가능한객체:
+> 
 > range(시작,끝,증가폭)
 > 
 > range(5) -> 0, 5
@@ -24,8 +27,10 @@ tags: [python, control statement]
 > 
 > list(range(0,5,2)) -> 0,2,4
 
+
 3. while
 > while 조건:
+
 
 - break, continue
 > 반복문, 조건문 
