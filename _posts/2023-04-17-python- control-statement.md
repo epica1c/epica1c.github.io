@@ -1,9 +1,10 @@
 ---
-title: 1. 파이썬의 변수, 연산자
+title: 1. 파이썬의 제어문
 author: 수채화
 date: 2023-04-14 15:00:00 0000
 categories: [Blogging, Study, Python]
 tags: [python, control statement]
+---
 
 1. if
 > if 조건:
