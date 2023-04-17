@@ -2,7 +2,7 @@
 title: 1. 파이썬의 변수, 연산자
 author: 수채화
 date: 2023-04-14 15:00:00 0000
-categories: [Study, Python]
+categories: [Blogging, Study, Python]
 tags: [python, operator]
 ---
 
