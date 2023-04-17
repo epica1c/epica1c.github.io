@@ -1,7 +1,7 @@
 ---
-title: 1. 파이썬의 제어문
+title: 2. 파이썬의 제어문
 author: 수채화
-date: 2023-04-14 15:00:00 0000
+date: 2023-04-17 13:00:00 0000
 categories: [Blogging, Study, Python]
 tags: [python, control statement]
 ---
