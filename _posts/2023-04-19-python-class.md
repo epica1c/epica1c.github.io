@@ -94,7 +94,7 @@ all_sprites.add(character2)
 # 폰트 객체 생성하기
 font = pygame.font.SysFont("Arial", 32)
 
-# 게임 루프 실행하기
+# 게임 루프 실행하기 
 running = True
 
 while running:
