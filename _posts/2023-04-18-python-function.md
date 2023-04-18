@@ -3,7 +3,7 @@ title: 3. 파이썬의 함수
 author: 수채화
 date: 2023-04-18 08:58:00 0000
 categories: [Blogging, Study, Python]
-tags: [python, control statement]
+tags: [python, function]
 ---
 
 - def 함수이름(매개변수,[]):<br>
