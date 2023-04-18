@@ -1,7 +1,7 @@
 ---
 title: 4. 파이썬에서 클래스 연습
 author: 수채화
-date: 2023-04-19 12:56:00 0000
+date: 2023-04-19 01:56:00 0000
 categories: [Blogging, Study, Python]
 tags: [python, class]
 ---
