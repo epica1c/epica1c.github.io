@@ -18,8 +18,8 @@ GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 
 # 화면 크기 설정
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
+SCREEN_WIDTH = 1024
+SCREEN_HEIGHT = 868
 
 # 캐릭터 클래스 정의
 class Character(pygame.sprite.Sprite):
@@ -34,10 +34,10 @@ class Character(pygame.sprite.Sprite):
         self.rect.y = y
         # 속성 설정
         self.name = random.choice(["Alice", "Bob", "Charlie", "David", "Eve"])
-        self.level = random.randint(1, 10)
-        self.health = random.randint(1, 10)
-        self.strength = random.randint(1, 10)
-        self.agility = random.randint(1, 10)
+        self.level = random.randint(5, 10)
+        self.health = random.randint(5, 10)
+        self.strength = random.randint(1, 5)
+        self.agility = random.randint(1, 4)
         # 추가 속성 설정
         self.hp = self.level * self.health
         self.attack = self.level * self.strength
@@ -53,7 +53,8 @@ class Character(pygame.sprite.Sprite):
             dice = random.randint(1, 20)
             # 주사위가 20이면 치명타
             if dice == 20:
-                damage = target.hp
+                damage = max(self.attack - target.defense, 0) * 2
+                
                 print(f"{self.name}이(가) {target.name}에게 치명타를 입혔습니다!")
             # 주사위가 1이면 실패
             elif dice == 1:
@@ -68,8 +69,8 @@ class Character(pygame.sprite.Sprite):
             # 대상의 체력이 음수면 0으로 만들기
             if target.hp < 0:
                 target.hp = 0
-            # 공격 불가능 상태로 만들기
-            self.can_attack = False
+                # 공격 불가능 상태로 만들기
+                self.can_attack = False
 
 # pygame 초기화하기
 pygame.init()
@@ -150,11 +151,14 @@ while running:
 
     # 캐릭터가 공격하기
     for character in order:
-        if character == character1:
-            target = character2
+        if character1.can_attack and character2.can_attack:
+            if character == character1:
+                target = character2
+            else:
+                target = character1
+            character.attacked(target)
         else:
-            target = character1
-        character.attacked(target)
+            break            
 
 # pygame 종료하기
 pygame.quit()
