@@ -46,7 +46,7 @@ class Character(pygame.sprite.Sprite):
         self.can_attack = True
 
     # 공격 메서드 정의
-    def attack(self, target):
+    def attacked(self, target):
         # 공격 가능한 경우
         if self.can_attack:
             # 주사위 굴리기
@@ -84,8 +84,8 @@ pygame.display.set_caption("Turn-based Game")
 all_sprites = pygame.sprite.Group()
 
 # 캐릭터 객체 생성하기
-character1 = Character(100, 300, "character1.png")
-character2 = Character(600, 300, "character2.png")
+character1 = Character(100, 300, "player1.png")
+character2 = Character(600, 300, "player2.png")
 
 # 스프라이트 그룹에 캐릭터 추가하기
 all_sprites.add(character1)
@@ -106,7 +106,7 @@ while running:
             running = False
 
     # 화면 배경색으로 채우기
-    screen.fill(BLACK)
+    screen.fill(BLUE)
 
     # 스프라이트 그룹 업데이트하고 그리기
     all_sprites.update()
@@ -154,9 +154,8 @@ while running:
             target = character2
         else:
             target = character1
-        character.attack(target)
+        character.attacked(target)
 
 # pygame 종료하기
 pygame.quit()
-
  ```
